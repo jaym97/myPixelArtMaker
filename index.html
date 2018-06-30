@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pixel Art Maker</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    <body>
+        <div class="header-div">
+            <div>
+                <h1 class="header-text">Lab: Pixel Art Maker</h1>
+            </div>
+            <span class="main-help-icon">
+                <p>
+                    <strong>How to use this Page:</strong> Choose your desired width and height for the canvas then click submit. Click this icon for more help on how to use other parts of the page.
+                </p>
+            </span>
+        </div>
+        <div class="tools-container">
+            <div class="tools-text">
+                <h3>Choose Grid Size</h3>
+                <form class="input-form">
+                    Grid Height:
+                    <input class="input-height" type="number" min="1" value="1">
+                    Grid Width:
+                    <input class="input-width" type="number" min="1" value="1">
+                    <button type="button" class="buttons" id="submitButton">submit</button>
+                </form>
+            </div>
+            <div class="tools-text">
+                <h3>Pick a Color</h3>
+                <input type="color" class="color-picker" value="#000046">
+                <div class="help-icon">
+                    <p>Click this button and choose a color to design the canvas. Click to paint, click on the same cell to erase. You can use multiple colors on one canvas :)</p>
+                </div>
+            </div>
+            <div class="tools-text">
+                <h3>Design Canvas</h3>
+                <button type="button" class="buttons" id="reset-button">reset</button>
+                <div class="help-icon">
+                    <p>Click this button to reset the canvas. You can also change the grid height and width before resetting if you want a bigger or smaller canvas.</p>
+                </div>
+            </div>
+                <table class="pixel-canvas"></table>
+        </div>
+        <script src="designs.js"></script>
+    </body>
+</html>
