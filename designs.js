@@ -12,10 +12,10 @@ const HELP_BUTTON = $('.main-help-icon');
 let tableExists = false;
 
 /**
-* @description event listener to check for a click on the reset button and resets the grid if a canvas has already been created
+* @description event listener to check for a click on the reset button and resets the grid only if a canvas has already been created
 */
 RESET_BUTTON.click(function() {
-        !tableExists ? alert('You have not created a canvas yet ;)') : GRID.find('tbody').remove() && makeGrid();
+        !tableExists ? alert('You have not created a canvas yet!') : GRID.find('tbody').remove() && makeGrid();
 });
  /**
  * @description event listener to check for a click on the submit button and creates a grid, per the chosen input sizes, then makes the reset button visible
@@ -35,7 +35,7 @@ SUBMIT_BUTTON.click(function() {
 HELP_BUTTON.click(function() {
         const helpElements = document.getElementsByClassName('help-icon');
         /**
-        * @description function to make the other tooltip icon show when the main help icon is clicked
+        * @description function to make the other tooltip icons show when the main help icon is clicked
         */
         function makeVisible(){
                 for (let i = 0; i < helpElements.length; i++){
@@ -69,7 +69,7 @@ function makeGrid() {
 */
 GRID.on('click', 'td', function() {
         if ($(this).attr('style')){
-              $(this).css('background-color', 'white');
+              $(this).removeAttr('style');
         }
         else {
                 $(this).css('backgroundColor', selectedColor.val());
@@ -78,6 +78,3 @@ GRID.on('click', 'td', function() {
 /**
 * @description event listener to check for a double click on any of the cells in the grid and then removes the color on it
 */
-GRID.on('dblclick', 'td', function() {
-
-});

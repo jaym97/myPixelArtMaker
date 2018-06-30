@@ -21,6 +21,7 @@
   width: 24px;
   height: 24px;
   font-size: 16px;
+  font-family: comic sans ms;
   line-height: 26px;
   cursor: help;
 }
@@ -51,7 +52,7 @@ p {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   right: -4px;
   color: black;
-  font-size: 17px;
+  font-size: 15.45px;
   font-family: comic sans ms;
   line-height: 1.4;
 }
@@ -93,17 +94,18 @@ body {
 /* grid height and width input style*/
 input[type="number"] {
   width: 50px;
-  border: 2px outset #3866A3;
+  border: 3px inset #3866A3;
   box-shadow: 0px 0px 5px #222 inset;
   background-color: yellow;
   font-size: 18px;
+  border-radius: 6px;
 }
 
 table {
   border-collapse: collapse;
   margin: 0 auto;
   background-color: white;
-  border: 6px ridge #c1dad7;
+  border: 4px inset #1cb5e0; 
 }
 
 
@@ -145,10 +147,10 @@ p {
   background: linear-gradient(yellow, greenyellow);
   padding: 20px;
   width: 300px;
-  border-radius: 3px;
+  border-radius: 6px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   color: black;
-  font-size: 17px;
+  font-size: 15.45px;
   line-height: 1.4;
 }
 
