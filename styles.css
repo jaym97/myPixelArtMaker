@@ -73,6 +73,8 @@ p:before {
 /* Body Content*/
 body {
   background: linear-gradient(to top, #159957, #1cb5e0, #000046);
+  background: -ms-linear-gradient(top,  #159957, #1cb5e0, #000046);
+  background: -moz-linear-gradient(#159957, #1cb5e0, #000046);
   text-align: center;
 }
 

@@ -65,16 +65,8 @@ function makeGrid() {
         tableExists = true;
 }
 /**
-* @description event listener to check for a click on any of the cells in the grid and then adds the chosen color to it
+* @description event listener to check for a click on any of the cells in the grid and then adds the chosen color to it or removes the color if the cell is already painted
 */
 GRID.on('click', 'td', function() {
-        if ($(this).attr('style')){
-              $(this).removeAttr('style');
-        }
-        else {
-                $(this).css('backgroundColor', selectedColor.val());
-        }
+        $(this).attr('style') ? $(this).removeAttr('style') : $(this).css('backgroundColor', selectedColor.val());                
 });
-/**
-* @description event listener to check for a double click on any of the cells in the grid and then removes the color on it
-*/
